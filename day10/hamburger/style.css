@@ -1,0 +1,33 @@
+img{
+    width: 40px;
+}
+.child>p {
+    background-color: #eee;
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+}
+.child{
+    position: relative;
+    left: -100%;
+    transition:left 1s ease;
+}
+#check{
+    display:none;
+    
+}
+.child>p:hover{
+    background-color: #eee;
+    color: black;
+    font-size: 1.6rem;
+    transform:scale(1.05);
+    transition: p 1s ease;
+}
+input:checked~.child {
+    left: 10px;
+}
+.parent{
+    cursor: pointer;
+}
